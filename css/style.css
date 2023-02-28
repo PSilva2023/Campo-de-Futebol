@@ -1,0 +1,166 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --border: 4px solid #FFF;
+}
+
+.content-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #13131F;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    width: 850px;
+    height: 430px;
+    background-color: #429505;
+    border: var(--border);
+    overflow: hidden;
+}
+
+.corner {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: var(--border);
+
+}
+
+ .t-l {
+    top: -16px;
+    left: -16px;
+}
+ .b-l {
+    bottom: -16px;
+    left: -16px;
+}
+ .t-r {
+    top: -16px;
+    right: -16px;
+}
+ .b-r {
+    bottom: -16px;
+    right: -16px;
+}
+
+
+
+.circle-center {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 135px;
+    height: 135px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: var(--border);
+}
+
+span {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+
+.content-left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border-right: 2px solid #FFF;
+}
+
+.content-left::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 140px;
+    border: var(--border);
+    border-left: none;
+}
+
+.content-left::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    left: 70px;
+    width: 80px;
+    height: 140px;
+    border-radius: 50%;
+    border: var(--border);
+}
+
+.content-right {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    border-left:  2px solid #FFF;
+}
+
+.content-right::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    right: 70px;
+    width: 80px;
+    height: 140px;
+    border-radius: 50%;
+    border: var(--border);
+}
+
+.content-right::after {
+    position: absolute;
+    content: '';
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 140px;
+    border: var(--border);
+    border-right: none;
+}
+
+
+
+.big-area {
+    position: absolute;
+    width: 130px;
+    height: 280px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: var(--border);
+    background-color: #429505;
+}
+
+.big-area-left {
+    border-left: none;
+}
+
+
+
+.big-area-right {
+    position: absolute;
+    right: 0;
+    border-right: none;
+
+}
+
